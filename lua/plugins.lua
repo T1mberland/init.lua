@@ -34,13 +34,19 @@ if vim.g.vscode then
 else
     local vim = vim
     local Plug = vim.fn['plug#']
-    print("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+    print("HERE WE GOOOOOOO!")
 
     vim.call('plug#begin')
+    -- ============== THEMES ==============
     Plug('jonathanfilip/vim-lucius')
     Plug('djpohly/elly.vim')
+    Plug('morhetz/gruvbox')
+    Plug('luisiacc/gruvbox-baby')
     Plug('nanotech/jellybeans.vim')
-    Plug('neovimhaskell/haskell-vim')
+    Plug('karoliskoncevicius/moonshine-vim')
+    -- ============== THEMES END ==============
+
+    --Plug('neovimhaskell/haskell-vim')
     Plug('vim-airline/vim-airline')
     Plug('vim-airline/vim-airline-themes')
     Plug('unblevable/quick-scope')
@@ -61,17 +67,13 @@ else
 
     Plug('VonHeikemen/lsp-zero.nvim', { ['branch']= 'v3.x'})
     
-    Plug('nvim-lua/plenary.nvim')
     Plug('ThePrimeagen/harpoon')
     
     Plug('lervag/vimtex')
     -- Plug( 'Shougo/deoplete.nvim')
-    Plug('lervag/vimtex')
+    -- Plug('lervag/vimtex')
     Plug('dense-analysis/ale')
     vim.call('plug#end')
-
-    vim.g.airline_powerline_fonts = 1
-    vim.g.airline_theme = 'elly'
 
     if vim.fn.has('gui_running') == 1 then
         vim.opt.guifont = "NovaMono for Powerline:h11"
@@ -90,7 +92,15 @@ else
     })
 
     vim.g.clever_f_fix_key_direction = 1
-    vim.cmd([[colorscheme elly]])
+    --vim.cmd([[colorscheme elly]])
+    --vim.cmd([[colorscheme gruvbox]])
+    
+    -- Enable telescope theme
+    vim.g.gruvbox_baby_telescope_theme = 1
+    -- Enable transparent mode
+    --vim.g.gruvbox_baby_transparent_mode = 1
+    vim.cmd([[colorscheme gruvbox-baby]])
+    --vim.cmd([[colorscheme moonshine_lowcontrast]])
     vim.opt.termguicolors = true
 
     vim.g.Powerline_symbols = 'fancy'
@@ -98,8 +108,10 @@ else
     vim.g.airline_powerline_fonts = 1
     vim.g.webdevicons_enable_airline_tabline = 0
     vim.g['airline#extensions#tabline#enabled'] = 1
-    vim.api.nvim_set_keymap('n', '<C-p>', '<Plug>AirlineSelectPrevTab', {silent = true})
-    vim.api.nvim_set_keymap('n', '<C-n>', '<Plug>AirlineSelectNextTab', {silent = true})
+    vim.api.nvim_set_keymap('n', '<C-l>', ':bnext', {silent = true})
+    vim.api.nvim_set_keymap('n', '<C-h>', ':bprev', {silent = true})
+    --vim.api.nvim_set_keymap('n', '<C-a>', '<Plug>AirlineSelectPrevTab', {silent = true})
+    --vim.api.nvim_set_keymap('n', '<C-s>', '<Plug>AirlineSelectNextTab', {silent = true})
 
     -- Haskell configurations
     vim.g.haskell_enable_quantification = 1
@@ -117,8 +129,8 @@ else
     vim.g['deoplete#enable_at_startup'] = 1
 
     -- ALE configurations
-    vim.g.ale_echo_msg_error_str = 'E'
-    vim.g.ale_echo_msg_warning_str = 'W'
-    vim.g.ale_echo_msg_format = '[%linter%] %s [%severity%]'
-    vim.g.ale_lint_on_text_changed = 'always'
+    -- vim.g.ale_echo_msg_error_str = 'E'
+    -- vim.g.ale_echo_msg_warning_str = 'W'
+    -- vim.g.ale_echo_msg_format = '[%linter%] %s [%severity%]'
+    -- vim.g.ale_lint_on_text_changed = 'always'  -- Update warnings in insert mode
 end
