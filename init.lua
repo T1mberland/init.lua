@@ -30,6 +30,7 @@ vim.opt.scrolloff = 8 -- Minimum number of screen lines to keep above and below 
 vim.opt.formatoptions:append("mM") -- Don't insert line breaks in the middle of multibyte characters
 vim.opt.ambiwidth = "double" -- Make ambiguous-width characters twice as wide (useful for some Unicode characters)
 vim.opt.display:append("lastline") -- Try to show as much as possible of the last line
+vim.opt.updatetime = 500
 
 -- Enable filetype plugins and indenting
 vim.cmd [[filetype plugin indent on]]
@@ -39,6 +40,7 @@ vim.cmd [[syntax on]]
 
 -- Set leader key
 vim.g.mapleader = " "
+--vim.g.maplocalleader = "]"
 
 require('keymaps')
 require('plugins')

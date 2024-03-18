@@ -13,6 +13,7 @@ vim.api.nvim_set_keymap('n', 'gj', 'j', opts)
 vim.api.nvim_set_keymap('n', 'gk', 'k', opts)
 
 -- Various other normal mode mappings
+vim.api.nvim_set_keymap('n', '<C-b>', '<', opts)
 vim.api.nvim_set_keymap('n', 'J', 'mzJ`z', opts)
 vim.api.nvim_set_keymap('n', '<C-u>', '<C-u>zz', opts)
 vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>zz', opts)
@@ -25,8 +26,12 @@ vim.api.nvim_set_keymap('n', '<C-d>', '"_dd', opts)
 vim.api.nvim_set_keymap('n', '<C-x>', '"_x', opts)
 vim.api.nvim_set_keymap('n', 'K', '<nop>', opts)
 
+vim.api.nvim_set_keymap('n', '<C-S-a>', ':lua vim.lsp.buf.hover()', opts)
+
 -- Disable <C-o> in normal mode
 vim.api.nvim_set_keymap('n', '<C-o>', '<nop>', opts)
+vim.api.nvim_set_keymap('n', '<C-m>', '<nop>', opts)
+vim.api.nvim_set_keymap('n', '<C-n>', '<nop>', opts)
 
 vim.api.nvim_set_keymap('i', 'jk', '<ESC>', opts)
 

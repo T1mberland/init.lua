@@ -39,6 +39,11 @@ mapping = cmp.mapping.preset.insert({
     ['<C-b>'] = cmp_action.luasnip_jump_backward(),
     ['<C-u>'] = cmp.mapping.scroll_docs(-4),
     ['<C-d>'] = cmp.mapping.scroll_docs(4),
+
+    ['<CR>'] = cmp.mapping.confirm({
+        behavior = cmp.ConfirmBehavior.Replace,
+        select = false, -- This line makes the difference
+    }),
 })
 })
 
@@ -47,5 +52,13 @@ local cmp_select = {behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp_zero.defaults.cmp_mappings({
     ['<C-Space>'] = cmp.mapping.complete(cmp_select),
 })
+
+vim.diagnostic.config({
+    virtual_text = false,
+    signs = true,
+    float = { border = "single" },
+})
+
+vim.cmd([[au CursorHold * lua vim.diagnostic.open_float(0,{scope = "cursor"})]])
 
 

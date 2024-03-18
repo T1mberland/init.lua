@@ -23,9 +23,12 @@ end
 local function insert_text_block(args)
     -- Split the argument into parts
     local parts = vim.split(args.args, " ")
+
     local env_name = shortcut_name(parts[1])
+    local current_line = vim.api.nvim_get_current_line()
+    local indent = string.match(current_line, "^%s*")  -- Matches leading whitespace
     -- The function inserts the LaTeX align* block
-    local lines = {'\\begin{' .. env_name .. '}', '', '\\end{' .. env_name .. '}'}
+    local lines = {indent .. '\\begin{' .. env_name .. '}', '', indent .. '\\end{' .. env_name .. '}'}
     -- Get the current line number
     local line_num = vim.api.nvim_win_get_cursor(0)[1]
     -- Insert the lines at the current line number
@@ -36,5 +39,7 @@ end
 
 -- Create a flexible command named "Tb" that accepts an argument
 vim.api.nvim_create_user_command('T', insert_text_block, {nargs = 1})
+
+
 
 
