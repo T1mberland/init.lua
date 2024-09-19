@@ -2,7 +2,7 @@
 vim.opt.encoding = "utf-8"
 
 -- Use system clipboard
-vim.opt.clipboard = "unnamed"
+vim.opt.clipboard = "unnamedplus"
 
 -- Search options
 vim.opt.ignorecase = true -- Ignore case in search patterns
