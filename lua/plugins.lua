@@ -80,5 +80,6 @@ else
     vim.api.nvim_set_keymap('n', '<C-h>', ':bprev', {silent = true})
 
     require('lsp')
+    require('linter')
 end
 
