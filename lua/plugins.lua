@@ -3,12 +3,9 @@ if vim.g.vscode then
     local Plug = vim.fn['plug#']
 
     vim.call('plug#begin')
-    --Plug('neovimhaskell/haskell-vim')
-    --Plug('vim-airline/vim-airline')
-    --Plug('vim-airline/vim-airline-themes')
-    Plug('unblevable/quick-scope')
-    Plug('rhysd/clever-f.vim')
-    Plug('rose-pine/neovim')
+        Plug('unblevable/quick-scope')
+        Plug('rhysd/clever-f.vim')
+        Plug('rose-pine/neovim')
     vim.call('plug#end')
 
     vim.g.clever_f_fix_key_direction = 1
@@ -18,42 +15,33 @@ else
     print("HERE WE GOOOOOOO!")
 
     vim.call('plug#begin')
-    -- ============== THEMES ==============
-    Plug('jonathanfilip/vim-lucius')
-    Plug('djpohly/elly.vim')
-    Plug('morhetz/gruvbox')
-    Plug('luisiacc/gruvbox-baby')
-    Plug('nanotech/jellybeans.vim')
-    Plug('karoliskoncevicius/moonshine-vim')
-    Plug('rose-pine/neovim')
-    -- ============== THEMES END ==============
+        -- ============== THEMES ==============
+        Plug('jonathanfilip/vim-lucius')
+        Plug('djpohly/elly.vim')
+        Plug('morhetz/gruvbox')
+        Plug('luisiacc/gruvbox-baby')
+        Plug('nanotech/jellybeans.vim')
+        Plug('karoliskoncevicius/moonshine-vim')
+        Plug('rose-pine/neovim')
+        -- ============== THEMES END ==============
 
-    --Plug('neovimhaskell/haskell-vim')
-    Plug('vim-airline/vim-airline')
-    Plug('vim-airline/vim-airline-themes')
-    Plug('unblevable/quick-scope')
-    Plug('nvim-lua/plenary.nvim')
-    Plug('rhysd/clever-f.vim')
-    Plug('nvim-telescope/telescope.nvim', { ['tag']= '0.1.5' })
-    --Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate'})
-    
-    --Plug('williamboman/mason.nvim')
-    --Plug('williamboman/mason-lspconfig.nvim')
-
-    --Plug('neovim/nvim-lspconfig')
-
-    --Plug('hrsh7th/nvim-cmp')
-    --Plug('hrsh7th/cmp-nvim-lsp')
-    --Plug('L3MON4D3/LuaSnip')
-
-    --Plug('VonHeikemen/lsp-zero.nvim', { ['branch']= 'v3.x'})
-    
-    Plug('ThePrimeagen/harpoon')
-    
-    --Plug('lervag/vimtex')
-    -- Plug( 'Shougo/deoplete.nvim')
-    -- Plug('lervag/vimtex')
-    --Plug('dense-analysis/ale')
+        --Plug('neovimhaskell/haskell-vim')
+        Plug('vim-airline/vim-airline')
+        Plug('vim-airline/vim-airline-themes')
+        Plug('unblevable/quick-scope')
+        Plug('nvim-lua/plenary.nvim')
+        Plug('rhysd/clever-f.vim')
+        Plug('nvim-telescope/telescope.nvim', { ['tag']= '0.1.5' })
+        Plug('ThePrimeagen/harpoon')
+        --Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate'})
+        
+        Plug('williamboman/mason.nvim')
+        Plug('williamboman/mason-lspconfig.nvim')
+        Plug('neovim/nvim-lspconfig')
+        Plug('mfussenegger/nvim-lint') -- Linter
+        Plug('mhartington/formatter.nvim') -- formatter
+        
+        Plug('kaarmu/typst.vim')
     vim.call('plug#end')
 
     if vim.fn.has('gui_running') == 1 then
@@ -90,6 +78,7 @@ else
     vim.g['airline#extensions#tabline#enabled'] = 1
     vim.api.nvim_set_keymap('n', '<C-l>', ':bnext', {silent = true})
     vim.api.nvim_set_keymap('n', '<C-h>', ':bprev', {silent = true})
-    --vim.api.nvim_set_keymap('n', '<C-a>', '<Plug>AirlineSelectPrevTab', {silent = true})
-    --vim.api.nvim_set_keymap('n', '<C-s>', '<Plug>AirlineSelectNextTab', {silent = true})
+
+    require('lsp')
 end
+
