@@ -34,13 +34,13 @@ else
         Plug('nvim-telescope/telescope.nvim', { ['tag']= '0.1.5' })
         Plug('ThePrimeagen/harpoon')
         --Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate'})
-        
+
         Plug('williamboman/mason.nvim')
         Plug('williamboman/mason-lspconfig.nvim')
         Plug('neovim/nvim-lspconfig')
         Plug('mfussenegger/nvim-lint') -- Linter
         Plug('mhartington/formatter.nvim') -- formatter
-        
+
         Plug('kaarmu/typst.vim')
     vim.call('plug#end')
 
@@ -62,7 +62,7 @@ else
 
     --vim.cmd([[colorscheme elly]])
     --vim.cmd([[colorscheme gruvbox]])
-    
+
     -- Enable telescope theme
     vim.g.gruvbox_baby_telescope_theme = 1
     -- Enable transparent mode
@@ -81,5 +81,6 @@ else
 
     require('lsp')
     require('linter')
+    require('telescope')
 end
 
