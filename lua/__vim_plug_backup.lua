@@ -26,20 +26,20 @@ else
         -- ============== THEMES END ==============
 
         --Plug('neovimhaskell/haskell-vim')
-        Plug('vim-airline/vim-airline')
-        Plug('vim-airline/vim-airline-themes')
-        Plug('unblevable/quick-scope')
-        Plug('nvim-lua/plenary.nvim')
-        Plug('rhysd/clever-f.vim')
-        Plug('nvim-telescope/telescope.nvim', { ['tag']= '0.1.5' })
+        ----Plug('vim-airline/vim-airline')
+        ----Plug('vim-airline/vim-airline-themes')
+        ----Plug('unblevable/quick-scope')
+        ----Plug('nvim-lua/plenary.nvim')
+        ----Plug('rhysd/clever-f.vim')
+        ----Plug('nvim-telescope/telescope.nvim', { ['tag']= '0.1.5' })
         Plug('ThePrimeagen/harpoon')
         --Plug('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate'})
 
-        Plug('williamboman/mason.nvim')
-        Plug('williamboman/mason-lspconfig.nvim')
-        Plug('neovim/nvim-lspconfig')
-        Plug('mfussenegger/nvim-lint') -- Linter
-        Plug('mhartington/formatter.nvim') -- formatter
+        ----Plug('williamboman/mason.nvim')
+        ----Plug('williamboman/mason-lspconfig.nvim')
+        ----Plug('neovim/nvim-lspconfig')
+        ----Plug('mfussenegger/nvim-lint') -- Linter
+        ----Plug('mhartington/formatter.nvim') -- formatter
 
         Plug('kaarmu/typst.vim')
     vim.call('plug#end')
