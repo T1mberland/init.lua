@@ -82,7 +82,7 @@ require('lspconfig')['rust_analyzer'].setup {
 capabilities = capabilities,
 on_attach = on_attach
 }
-require('lspconfig')['typst_lsp'].setup {
+require('lspconfig')['tinymist'].setup {
 capabilities = capabilities,
 on_attach = on_attach
 }
