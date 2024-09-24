@@ -1,6 +1,11 @@
 return {
     { "williamboman/mason.nvim", opts = {} },
-    { "williamboman/mason-lspconfig.nvim", opts = {}, dependencies = { "williamboman/mason.nvim" }, },
+    { "williamboman/mason-lspconfig.nvim",
+      opts = {
+        ensure_installed={ "lua_ls", "rust_analyzer", "tinymist" }
+      },
+      dependencies = { "williamboman/mason.nvim" },
+    },
     {
         "neovim/nvim-lspconfig",
       dependencies = {
