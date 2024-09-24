@@ -65,3 +65,7 @@ require("lazy").setup({
   { import = "plugins", cond = function () return not vim.g.vscode end },
   --{ import = "plugins.vscode", cond = function() return vim.g.vscode end },
 })
+
+-- Plugin setup
+require('plugsetup')
+
