@@ -8,7 +8,7 @@ snippet = {
     -- require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
     -- require('snippy').expand_snippet(args.body) -- For `snippy` users.
     -- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
-    -- vim.snippet.expand(args.body) -- For native neovim snippets (Neovim v0.10+)
+    vim.snippet.expand(args.body) -- For native neovim snippets (Neovim v0.10+)
   end,
 },
 window = {
@@ -24,7 +24,7 @@ mapping = cmp.mapping.preset.insert({
 }),
 sources = cmp.config.sources({
   { name = 'nvim_lsp' },
-  { name = 'vsnip' }, -- For vsnip users.
+  -- { name = 'vsnip' }, -- For vsnip users.
   -- { name = 'luasnip' }, -- For luasnip users.
   -- { name = 'ultisnips' }, -- For ultisnips users.
   -- { name = 'snippy' }, -- For snippy users.
@@ -60,31 +60,31 @@ sources = cmp.config.sources({
 }, {
   { name = 'cmdline' }
 }),
-matching = { disallow_symbol_nonprefix_matching = false }
+    matching = { disallow_symbol_nonprefix_matching = false }
 })
 
 local on_attach = function(_, _)
-vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
-vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
-vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
-vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, {})
---vim.keymap.set('n', 'gr', require('telescope.builtin').lsp_references, {})
-vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
+    vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
+    vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
+    vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
+    vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, {})
+    --vim.keymap.set('n', 'gr', require('telescope.builtin').lsp_references, {})
+    vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
 end
 
 -- Set up lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 require('lspconfig')['lua_ls'].setup {
-capabilities = capabilities,
-on_attach = on_attach
+    capabilities = capabilities,
+    on_attach = on_attach
 }
 require('lspconfig')['rust_analyzer'].setup {
-capabilities = capabilities,
-on_attach = on_attach
+    capabilities = capabilities,
+    on_attach = on_attach
 }
 require('lspconfig')['tinymist'].setup {
-capabilities = capabilities,
-on_attach = on_attach
+    capabilities = capabilities,
+    on_attach = on_attach
 }
 
 
