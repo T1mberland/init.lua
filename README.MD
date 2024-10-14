@@ -1,5 +1,5 @@
 # init.lua
-This is my Neovim `init.lua`. This setup makes use of lazy.nvim, which means you need `git` installed.
+This setup makes use of lazy.nvim, which means you need `git` installed.
 Also, install [Nerd Font](https://www.nerdfonts.com/font-downloads).
 
 ## Setup
