@@ -46,6 +46,3 @@ vim.api.nvim_set_keymap('v', '<C-i>', ':m \'>+1<CR>gv=gv', opts)
 vim.api.nvim_set_keymap('v', 'J', '<nop>', opts)
 vim.api.nvim_set_keymap('v', 'K', '<nop>', opts)
 
-
--- <Leader>t to open settings
-vim.api.nvim_set_keymap('n', '<Leader>t', ":e ~/AppData/Local/nvim", opts)
