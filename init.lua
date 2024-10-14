@@ -42,11 +42,6 @@ vim.cmd [[syntax on]]
 vim.g.mapleader = " "
 --vim.g.maplocalleader = "]"
 
-require('keymaps')
---require('plugins')
-require('commands')
-
-
 -- Lazy.nvim setup
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -72,4 +67,10 @@ if not vim.g.vscode then
 else
     require('plugsetup_vscode')
 end
+
+---
+
+require('keymaps')
+--require('plugins')
+require('commands')
 
