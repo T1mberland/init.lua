@@ -2,6 +2,9 @@
 This setup makes use of lazy.nvim, which means you need `git` installed.
 Also, install [Nerd Font](https://www.nerdfonts.com/font-downloads).
 
+### Haskell
+Do not use Mason to install hls. Use `ghcup` to install hls. `haskell-tools.nvim` is installed so you can just use hls out of the boxx
+
 ## Setup
 ### Windows
 Place these files under `~/AppData/Local/nvim`
