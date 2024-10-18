@@ -86,5 +86,9 @@ require('lspconfig')['tinymist'].setup {
     capabilities = capabilities,
     on_attach = on_attach
 }
+require('lspconfig')['hls'].setup {
+    capabilities = capabilities,
+    on_attach = on_attach
+}
 
 
