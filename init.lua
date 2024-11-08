@@ -18,9 +18,9 @@ vim.opt.relativenumber = true -- Show relative line number
 -- Editing options
 vim.opt.autoindent = true -- Copy indent from current line when starting a new line
 vim.opt.expandtab = true -- Convert tabs to spaces
-vim.opt.tabstop = 4 -- Number of spaces tabs count for
-vim.opt.shiftwidth = 4 -- Size of an indent
-vim.opt.softtabstop = 4 -- Number of spaces in tab when editing
+vim.opt.tabstop = 2 -- Number of spaces tabs count for
+vim.opt.shiftwidth = 2 -- Size of an indent
+vim.opt.softtabstop = 2 -- Number of spaces in tab when editing
 
 -- Set leader key
 vim.g.mapleader = " "
