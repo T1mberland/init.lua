@@ -29,7 +29,7 @@ vim.api.nvim_set_keymap('n', 'K', '<nop>', opts)
 vim.api.nvim_set_keymap('n', '<C-S-a>', ':lua vim.lsp.buf.hover()', opts)
 
 -- Disable <C-o> in normal mode
-vim.api.nvim_set_keymap('n', '<C-o>', '<nop>', opts)
+--vim.api.nvim_set_keymap('n', '<C-o>', '<nop>', opts)
 vim.api.nvim_set_keymap('n', '<C-m>', '<nop>', opts)
 vim.api.nvim_set_keymap('n', '<C-n>', '<nop>', opts)
 
