@@ -1,9 +1,10 @@
 # init.lua
 This setup makes use of lazy.nvim, which means you need `git` installed.
 Also, install [Nerd Font](https://www.nerdfonts.com/font-downloads).
+By default, this setup uses treesitter so you need a C compiler installed (`gcc` or something else).
 
 ### Haskell
-Do not use Mason to install hls. Use `ghcup` to install hls. `haskell-tools.nvim` is installed so you can just use hls out of the boxx
+Do not use Mason to install hls. Use `ghcup` to install hls. `haskell-tools.nvim` is installed but disabled.
 
 ## Setup
 ### Windows
@@ -23,9 +24,11 @@ Place these files under `~/.config/nvim`
 | `<C-i>`       | Next buffer in Harpoon list      | Harpoon   |
 | `<leader>rn`  | Rename symbol                    | LSP       |
 | `<leader>ca`  | Code actions                     | LSP       |
+| `<leader>k`   | Open diagnostics at the cursor   | LSP       |
+| `<leader>l`   | Open all diagnostics             | LSP       |
+| `K`           | Hover documentation              | LSP       |
 | `gd`          | Go to definition                 | LSP       |
 | `gi`          | Go to implementation             | LSP       |
-| `K`           | Hover documentation              | LSP       |
 | `<leader>ff`  | Find files                       | Telescope |
 | `<leader>fg`  | Live grep                        | Telescope |
 | `<leader>fb`  | Buffers                          | Telescope |
