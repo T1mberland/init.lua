@@ -73,6 +73,25 @@ cmp.setup.cmdline('/', {
   })
 })
 
+vim.o.updatetime = 250 -- Set delay for diagnostics display
+vim.diagnostic.config({
+  virtual_text = false,  -- Disable inline diagnostics
+  float = {
+    source = "always",   -- Show source of diagnostics
+  },
+})
+
+-- <Leader>k to see the diagnostics(errors, warnings)
+vim.keymap.set("n", "<Leader>k", function()
+  vim.diagnostic.open_float(nil, { focusable = false })
+end, { noremap = true, silent = true })
+
+vim.keymap.set("n", "<Leader>l", function()
+  vim.diagnostic.setloclist()
+  vim.cmd("lopen")  -- Opens the location list
+end, { noremap = true, silent = true })
+
+
 local on_attach = function(_, _)
   vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
   vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
@@ -100,22 +119,4 @@ require('lspconfig')['hls'].setup {
   capabilities = capabilities,
   on_attach = on_attach
 }
-
-vim.o.updatetime = 250 -- Set delay for diagnostics display
-vim.diagnostic.config({
-  virtual_text = false,  -- Disable inline diagnostics
-  float = {
-    source = "always",   -- Show source of diagnostics
-  },
-})
-
--- <Leader>k to see the diagnostics(errors, warnings)
-vim.keymap.set("n", "<Leader>k", function()
-  vim.diagnostic.open_float(nil, { focusable = false })
-end, { noremap = true, silent = true })
-
-vim.keymap.set("n", "<Leader>l", function()
-  vim.diagnostic.setloclist()
-  vim.cmd("lopen")  -- Opens the location list
-end, { noremap = true, silent = true })
 
