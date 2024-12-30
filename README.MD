@@ -1,10 +1,11 @@
 # init.lua
-This setup makes use of lazy.nvim, which means you need `git` installed.
-Also, install [Nerd Font](https://www.nerdfonts.com/font-downloads).
-By default, this setup uses treesitter so you need a C compiler installed (`gcc` or something else).
+- Lazy.nvim (you need `git` installed)
+- Install [Nerd Font](https://www.nerdfonts.com/font-downloads).
+
+By default, it uses treesitter so you need a C compiler installed (`gcc` or something else).
 
 ### Haskell
-Do not use Mason to install hls. Use `ghcup` to install hls. `haskell-tools.nvim` is installed but disabled.
+Do not use Mason to install hls. Use `ghcup`. `haskell-tools.nvim` is installed but disabled.
 
 ## Setup
 ### Windows
