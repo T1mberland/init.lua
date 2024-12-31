@@ -3,7 +3,22 @@ return {
 	{
 		"williamboman/mason-lspconfig.nvim",
 		opts = {
-			ensure_installed = { "lua_ls", "rust_analyzer", "tinymist" },
+			ensure_installed = {
+				"ast_grep",
+				"hlint",
+				"lua_ls",
+				"markdownlint",
+				"ormolu",
+				"prettier",
+				"prettierd",
+				"pylsp",
+				"ruff",
+				"rust_analyzer",
+				"stylua",
+				"tinymist",
+				"typst_lsp",
+				"typstfmt",
+			},
 		},
 		dependencies = { "williamboman/mason.nvim" },
 	},
@@ -30,6 +45,7 @@ return {
 				rust = { "rustfmt", lsp_format = "fallback" },
 				-- Conform will run the first available formatter
 				javascript = { "prettierd", "prettier", stop_after_first = true },
+				haskell = { "ormolu" },
 			},
 			format_on_save = {
 				-- These options will be passed to conform.format()
