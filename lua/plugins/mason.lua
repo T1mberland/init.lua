@@ -55,6 +55,16 @@ return {
 		},
 	},
 	{
+		"zapling/mason-conform.nvim",
+		opts = {
+			ignore_install = { "rustfmt" }, -- List of formatters to ignore during install
+		},
+		dependencies = {
+			"williamboman/mason.nvim",
+			"stevearc/conform.nvim",
+		},
+	},
+	{
 		"hrsh7th/nvim-cmp",
 		dependencies = {
 			"neovim/nvim-lspconfig",
