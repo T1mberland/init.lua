@@ -6,5 +6,6 @@ require('plugsetup.telescope_setup')
 require('plugsetup.linter_setup')
 require('plugsetup.cmp_setup')
 require('plugsetup.nvim_tree_setup')
+require('plugsetup.formatter_setup')
 --require('plugsetup.haskell_tools_setup')
 
