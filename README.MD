@@ -35,3 +35,13 @@ Place these files under `~/.config/nvim`
 | `<leader>fb`  | Buffers                          | Telescope |
 | `<leader>fh`  | Help tags                        | Telescope |
 
+## DEFAULT FORMATTERS (ENSURE INSTALLED)
+- hlint
+- markdownlint
+- ormolu
+- prettier
+- prettierd
+- stylua
+- typstfmt
+
+
