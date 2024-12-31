@@ -19,7 +19,8 @@ return {
         dependencies = { "williamboman/mason.nvim" },
     },
     {
-        "mhartington/formatter.nvim",
+        'stevearc/conform.nvim',
+        opts = {},
     },
     {
         'hrsh7th/nvim-cmp',
