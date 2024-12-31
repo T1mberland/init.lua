@@ -33,10 +33,10 @@ vim.opt.display:append("lastline") -- Try to show as much as possible of the las
 vim.opt.updatetime = 500
 
 -- Enable filetype plugins and indenting
-vim.cmd [[filetype plugin indent on]]
+vim.cmd([[filetype plugin indent on]])
 
 -- Enable syntax highlighting
-vim.cmd [[syntax on]]
+vim.cmd([[syntax on]])
 
 -- Set leader key
 vim.g.mapleader = " "
@@ -45,32 +45,41 @@ vim.g.mapleader = " "
 -- Lazy.nvim setup
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
+	vim.fn.system({
+		"git",
+		"clone",
+		"--filter=blob:none",
+		"https://github.com/folke/lazy.nvim.git",
+		"--branch=stable", -- latest stable release
+		lazypath,
+	})
 end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  { import = "plugins", cond = function () return not vim.g.vscode end },
-  { import = "plugins_vscode", cond = function () return vim.g.vscode end },
+	{
+		import = "plugins",
+		cond = function()
+			return not vim.g.vscode
+		end,
+	},
+	{
+		import = "plugins_vscode",
+		cond = function()
+			return vim.g.vscode
+		end,
+	},
 })
 
 -- Plugin setup
 if not vim.g.vscode then
-    require('plugsetup')
+	require("plugsetup")
 else
-    require('plugsetup_vscode')
+	require("plugsetup_vscode")
 end
 
 ---
 
-require('keymaps')
+require("keymaps")
 --require('plugins')
-require('commands')
-
+require("commands")
