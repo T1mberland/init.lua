@@ -1,1 +1,4 @@
-return { "rhysd/clever-f.vim" }
+return {
+	"rhysd/clever-f.vim",
+	enabled = false,
+}
