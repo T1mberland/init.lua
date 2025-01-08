@@ -16,7 +16,7 @@ return {
 				"rust_analyzer",
 				--"stylua",
 				"tinymist",
-				"typst_lsp",
+				--"typst_lsp",
 				--"typstfmt",
 			},
 		},
