@@ -1,0 +1,138 @@
+Extra options: []
+Measured: 10 times
+
+Total Average: 134.796400 msec
+Total Max:     145.542000 msec
+Total Min:     131.537000 msec
+
+  AVERAGE       MAX       MIN
+------------------------------
+68.932600 70.339000 68.248000: opening buffers
+33.860100 35.319000 33.080000: C:\Users\shaig\AppData\Local\nvim\init.lua
+13.982400 24.409000 11.658000: locale set
+ 3.369400  3.651000  3.204000: require('vim._defaults')
+ 3.357100  3.443000  3.198000: C:/Users/shaig/AppData/Local/nvim-data/lazy/vim-airline/plugin/airline.vim
+ 2.855000  3.266000  2.600000: C:\Users\shaig\AppData\Local\nvim-data\lazy\gruvbox-baby\colors\gruvbox-baby.vim
+ 2.601500  2.743000  2.529000: require('vim.lsp')
+ 2.240600  2.416000  2.100000: reading ShaDa
+ 1.450500  1.755000  1.375000: require('vim._init_packages')
+ 1.319000  1.508000  1.169000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline-themes\autoload\airline\themes\base16.vim
+ 1.297500  1.409000  1.200000: require('lazy.view.commands')
+ 1.231100  1.268000  1.164000: C:\Program Files\Neovim\share/nvim/runtime/plugin/matchit.vim
+ 1.226100  1.413000  1.020000: require('gruvbox-baby')
+ 1.132200  1.257000  1.016000: require('lazy.manage')
+ 1.131500  1.198000  1.084000: sourcing vimrc file(s)
+ 1.103600  1.161000  1.040000: C:/Users/shaig/AppData/Local/nvim-data/lazy/quick-scope/plugin/quick_scope.vim
+ 0.984700  1.042000  0.940000: C:\Program Files\Neovim\share/nvim/runtime/syntax/syntax.vim
+ 0.959000  1.175000  0.904000: require('vim._editor')
+ 0.912500  1.026000  0.831000: require('lazy.manage.runner')
+ 0.889100  0.949000  0.763000: require('lazy.core.loader')
+ 0.829300  0.879000  0.791000: require('vim.loader')
+ 0.767700  0.812000  0.722000: require('lazy')
+ 0.755300  0.815000  0.700000: init lua interpreter
+ 0.754100  0.803000  0.728000: require('vim.lsp.util')
+ 0.747000  0.827000  0.649000: require('plugsetup')
+ 0.653300  0.804000  0.599000: require('gruvbox-baby.util')
+ 0.627400  0.730000  0.561000: require('vim.lsp.protocol')
+ 0.619100  0.740000  0.542000: inits 1
+ 0.576200  0.639000  0.513000: require('lazy.manage.task')
+ 0.520100  0.564000  0.403000: require('lazy.core.plugin')
+ 0.428600  0.457000  0.405000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\parts.vim
+ 0.406000  0.418000  0.382000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\extensions.vim
+ 0.387600  0.460000  0.348000: require('lazy.core.config')
+ 0.368300  0.401000  0.354000: C:\Program Files\Neovim\share/nvim/runtime/plugin/netrwPlugin.vim
+ 0.364800  0.538000  0.297000: require('lazy.stats')
+ 0.361500  0.433000  0.337000: require('vim.shared')
+ 0.358700  0.421000  0.264000: require('lazy.core.meta')
+ 0.356800  0.384000  0.326000: C:\Program Files\Neovim\share/nvim/runtime/plugin/rplugin.vim
+ 0.333400  0.413000  0.313000: require('vim._options')
+ 0.332900  0.386000  0.301000: require('vim.lsp._changetracking')
+ 0.306400  0.377000  0.281000: init highlight
+ 0.299000  0.328000  0.266000: require('gruvbox-baby.theme')
+ 0.279000  0.344000  0.209000: require('vim.lsp.log')
+ 0.269000  0.316000  0.217000: require('gruvbox-baby.config')
+ 0.265300  0.318000  0.208000: require('lazy.core.util')
+ 0.259100  0.278000  0.245000: require('vim.uri')
+ 0.258700  0.284000  0.239000: require('vim.fs')
+ 0.254800  0.313000  0.227000: require('vim.lsp._snippet_grammar')
+ 0.252900  0.300000  0.226000: C:\Program Files\Neovim\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim
+ 0.246900  0.292000  0.214000: require('vim.lsp.rpc')
+ 0.234300  0.274000  0.216000: C:\Program Files\Neovim\share/nvim/runtime/plugin/gzip.vim
+ 0.228500  0.270000  0.165000: require('lazy.core.fragments')
+ 0.220100  0.342000  0.133000: C:\Program Files\Neovim\share/nvim/runtime/plugin/editorconfig.lua
+ 0.219900  0.252000  0.201000: C:\Users\shaig\AppData\Local\nvim-data\lazy\quick-scope\autoload\quick_scope.vim
+ 0.219100  0.261000  0.182000: require('keymaps')
+ 0.212400  0.281000  0.159000: require('gruvbox-baby.colors')
+ 0.210200  0.331000  0.094000: require('lazy.core.handler.ft')
+ 0.202300  0.229000  0.190000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\highlighter.vim
+ 0.195900  0.236000  0.181000: require('vim.inspect')
+ 0.194600  0.235000  0.158000: require('lazy.manage.process')
+ 0.184800  0.217000  0.163000: C:\Program Files\Neovim\share\nvim\runtime\filetype.lua
+ 0.181000  0.213000  0.149000: require('lazy.core.handler')
+ 0.177700  0.225000  0.129000: require('lazy.pkg')
+ 0.176400  0.289000  0.110000: C:\Program Files\Neovim\share/nvim/runtime/plugin/man.lua
+ 0.172900  0.187000  0.165000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline.vim
+ 0.169600  0.256000  0.138000: require('lazy.terminal')
+ 0.168700  0.180000  0.154000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\util.vim
+ 0.167600  0.246000  0.140000: require('gruvbox-baby.hsluv')
+ 0.166200  0.216000  0.133000: require('lazy.async')
+ 0.165000  0.180000  0.157000: C:\Program Files\Neovim\share/nvim/runtime/plugin/matchparen.vim
+ 0.163400  0.172000  0.155000: C:\Program Files\Neovim\share/nvim/runtime/plugin/zipPlugin.vim
+ 0.161400  0.169000  0.147000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\extensions\tabline.vim
+ 0.161200  0.191000  0.130000: require('plugsetup.airline_setup')
+ 0.155800  0.185000  0.133000: require('vim.lsp.sync')
+ 0.153200  0.219000  0.126000: require('commands')
+ 0.152100  0.280000  0.104000: require('lazy.core.handler.event')
+ 0.149700  0.207000  0.117000: require('plugsetup.quickscope_setup')
+ 0.146700  0.180000  0.130000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\init.vim
+ 0.145800  0.202000  0.116000: require('vim.highlight')
+ 0.145600  0.158000  0.138000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\extensions\tabline\buffers.vim
+ 0.140100  0.184000  0.131000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\builder.vim
+ 0.132900  0.189000  0.101000: require('lazy.core.handler.cmd')
+ 0.132800  0.169000  0.111000: require('plugsetup.clever_f_setup')
+ 0.130500  0.157000  0.104000: require('lazy.core.handler.keys')
+ 0.130000  0.179000  0.100000: require('plugsetup.linter_setup')
+ 0.126900  0.189000  0.110000: C:\Program Files\Neovim\share/nvim/runtime/plugin/tarPlugin.vim
+ 0.126200  0.135000  0.121000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\extensions\whitespace.vim
+ 0.125900  0.242000  0.095000: C:\Program Files\Neovim\share/nvim/runtime/plugin/osc52.lua
+ 0.124300  0.140000  0.105000: C:\Program Files\Neovim\share/nvim/runtime/filetype.lua
+ 0.119100  0.220000  0.086000: early init
+ 0.115300  0.146000  0.095000: C:\Program Files\Neovim\share/nvim/runtime/plugin/tohtml.lua
+ 0.108300  0.124000  0.092000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\extensions\term.vim
+ 0.104800  0.112000  0.089000: C:\Program Files\Neovim\share\nvim\runtime\syntax\synload.vim
+ 0.102900  0.110000  0.093000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\extensions\wordcount.vim
+ 0.091900  0.099000  0.085000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\extensions\tabline\tabs.vim
+ 0.083800  0.106000  0.077000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\extensions\nvimlsp.vim
+ 0.080700  0.100000  0.071000: expanding arguments
+ 0.080500  0.106000  0.067000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\section.vim
+ 0.077700  0.083000  0.074000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\extensions\default.vim
+ 0.075400  0.138000  0.051000: event init
+ 0.074000  0.092000  0.057000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\extensions\quickfix.vim
+ 0.072000  0.077000  0.068000: C:\Program Files\Neovim\share/nvim/runtime/plugin/shada.vim
+ 0.071400  0.081000  0.068000: BufEnter autocommands
+ 0.065000  0.113000  0.048000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\extensions\searchcount.vim
+ 0.063000  0.073000  0.053000: init first window
+ 0.056700  0.062000  0.052000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\extensions\tabline\autoshow.vim
+ 0.055600  0.112000  0.019000: C:\Program Files\Neovim\share\nvim\runtime\ftplugin.vim
+ 0.054700  0.062000  0.048000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\themes.vim
+ 0.048400  0.066000  0.040000: C:/Users/shaig/AppData/Local/nvim-data/lazy/vim-airline-themes/plugin/airline-themes.vim
+ 0.046600  0.068000  0.038000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\extensions\netrw.vim
+ 0.046500  0.051000  0.044000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\extensions\xkblayout.vim
+ 0.045000  0.078000  0.036000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\extensions\keymap.vim
+ 0.044500  0.061000  0.039000: require('vim.keymap')
+ 0.043600  0.056000  0.031000: C:\Program Files\Neovim\share/nvim/runtime/plugin/tutor.vim
+ 0.039600  0.051000  0.029000: C:\Program Files\Neovim\share/nvim/runtime/plugin/spellfile.vim
+ 0.036500  0.069000  0.016000: C:\Program Files\Neovim\share\nvim\runtime\indent.vim
+ 0.034200  0.044000  0.031000: C:/Users/shaig/AppData/Local/nvim-data/lazy/typst.vim/ftdetect/typst.vim
+ 0.033400  0.043000  0.026000: require('vim.F')
+ 0.027700  0.036000  0.024000: C:\Users\shaig\AppData\Local\nvim-data\lazy\vim-airline\autoload\airline\formatter\short_path.vim
+ 0.026800  0.036000  0.018000: inits 3
+ 0.024800  0.036000  0.017000: require('ffi')
+ 0.021200  0.027000  0.017000: window checked
+ 0.020900  0.026000  0.018000: inits 2
+ 0.013100  0.021000  0.012000: clear screen
+ 0.012100  0.017000  0.010000: init default mappings & autocommands
+ 0.010100  0.018000  0.006000: --- NVIM STARTING ---
+ 0.006100  0.007000  0.006000: --- NVIM STARTED ---
+ 0.005900  0.007000  0.005000: parsing arguments
+ 0.005400  0.009000  0.005000: editing files in windows
