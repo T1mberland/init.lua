@@ -2,7 +2,14 @@ return {
 	"nvim-tree/nvim-tree.lua",
 	--enabled = false,
 	version = "*",
-	lazy = false,
+	--lazy = false,
+	cmp = {
+		"NvimTreeOpen",
+		"NvimTreeFocus",
+		"NvimTreeToggle",
+		"NvimTreeRefresh",
+	},
+
 	dependencies = {
 		"nvim-tree/nvim-web-devicons",
 	},
