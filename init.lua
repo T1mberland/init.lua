@@ -72,4 +72,4 @@ require("lazy").setup({
 
 require("keymaps")
 --require('plugins')
-require("commands")
+--require("commands")

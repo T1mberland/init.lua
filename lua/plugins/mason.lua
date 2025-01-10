@@ -31,7 +31,7 @@ return {
 		dependencies = {
 			"williamboman/mason.nvim",
 			"williamboman/mason-lspconfig.nvim",
-			"nvim-telescope/telescope.nvim",
+			--"nvim-telescope/telescope.nvim",
 		},
 		event = { "BufReadPre", "BufNewFile" },
 	},
