@@ -11,11 +11,11 @@ return {
 			highlight = { enable = true },
 			ensure_installed = { "markdown", "lua", "haskell", "python" },
 		},
-		event = "BufRead",
+		event = { "BufReadPre", "BufNewFile" },
 	},
 	{
 		"nvim-treesitter/nvim-treesitter-textobjects",
 		--event = "CursorMoved",
-		event = "BufRead",
+		event = { "BufReadPre", "BufNewFile" },
 	},
 }

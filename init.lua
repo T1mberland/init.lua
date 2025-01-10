@@ -1,4 +1,5 @@
 -- Set up encoding
+vim.loader.enable()
 vim.opt.encoding = "utf-8"
 
 -- Use system clipboard
@@ -36,11 +37,7 @@ vim.opt.updatetime = 500
 vim.cmd([[filetype plugin indent on]])
 
 -- Enable syntax highlighting
-vim.cmd([[syntax on]])
-
--- Set leader key
-vim.g.mapleader = " "
---vim.g.maplocalleader = "]"
+vim.opt.syntax = "on"
 
 -- Lazy.nvim setup
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -70,13 +67,6 @@ require("lazy").setup({
 		end,
 	},
 })
-
--- Plugin setup
-if not vim.g.vscode then
-	require("plugsetup")
-else
-	require("plugsetup_vscode")
-end
 
 ---
 
