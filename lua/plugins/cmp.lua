@@ -18,12 +18,12 @@ return {
 					end,
 				},
 				window = {
-					-- completion = cmp.config.window.bordered(),
-					-- documentation = cmp.config.window.bordered(),
+					completion = cmp.config.window.bordered(),
+					documentation = cmp.config.window.bordered(),
 				},
 				mapping = cmp.mapping.preset.insert({
-					--['<C-b>'] = cmp.mapping.scroll_docs(-4),
-					--['<C-f>'] = cmp.mapping.scroll_docs(4),
+					--["<C-b>"] = cmp.mapping.scroll_docs(-4),
+					--["<C-f>"] = cmp.mapping.scroll_docs(4),
 					--['<C-Space>'] = cmp.mapping.complete(),
 					["<C-f>"] = cmp.mapping.abort(),
 					--['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
@@ -87,6 +87,19 @@ require("cmp_git").setup() ]]
 				float = {
 					source = "always", -- Show source of diagnostics
 				},
+			})
+
+			-- Configure rounded borders for LSP floating windows
+			vim.diagnostic.config({
+				float = { border = "rounded" }, -- Rounded corners for diagnostics
+			})
+
+			vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+				border = "rounded", -- Rounded corners for hover
+			})
+
+			vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
+				border = "rounded", -- Rounded corners for signature help
 			})
 
 			-- <Leader>k to see the diagnostics(errors, warnings)
