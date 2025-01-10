@@ -3,7 +3,7 @@ return {
 	--enabled = false,
 	version = "*",
 	--lazy = false,
-	cmp = {
+	cmd_ = {
 		"NvimTreeOpen",
 		"NvimTreeFocus",
 		"NvimTreeToggle",
