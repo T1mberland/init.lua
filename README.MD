@@ -1,11 +1,14 @@
 # init.lua
-- Lazy.nvim (you need `git` installed)
-- Install [Nerd Font](https://www.nerdfonts.com/font-downloads).
-
-By default, it uses treesitter so you need a C compiler installed (`gcc` or something else).
+## What you need
+- git (for lazy.nvim)
+- A C compiler such as gcc (for treesitter)
+- [Nerd Fonts](https://www.nerdfonts.com/font-downloads) (for lualine)
+- [ripgrep](https://github.com/BurntSushi/ripgrep) (for telescope)
 
 ### Haskell
-Do not use Mason to install hls. Use `ghcup`. `haskell-tools.nvim` is installed but disabled.
+Use `ghcup` to install `hls` (do not use Mason!).
+
+`haskell-tools.nvim` is installed but disabled.
 
 ## Setup
 ### Windows
@@ -31,9 +34,11 @@ Place these files under `~/.config/nvim`
 | `gd`          | Go to definition                 | LSP       |
 | `gi`          | Go to implementation             | LSP       |
 | `<leader>ff`  | Find files                       | Telescope |
-| `<leader>fg`  | Live grep                        | Telescope |
+| `<leader>fd`  | Live grep                        | Telescope |
 | `<leader>fb`  | Buffers                          | Telescope |
 | `<leader>fh`  | Help tags                        | Telescope |
+| `<leader>uu`  | Toggle floating file explorer    | NeoTree   |
+| `<leader>ui`  | Toggle file explorer on the left | NeoTree   |
 
 ## DEFAULT FORMATTERS (ENSURE INSTALLED)
 - hlint
