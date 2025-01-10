@@ -1,7 +1,7 @@
 return {
 	"ThePrimeagen/harpoon",
 	branch = "harpoon2",
-	--cmd = { "HarpoonToggle", "HarpoonMark" },
+	--event = { "InsertEnter" },
 	dependencies = { "nvim-lua/plenary.nvim" },
 	enabled = false,
 	config = function()
