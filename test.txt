@@ -1,93 +1,92 @@
 Extra options: []
 Measured: 10 times
 
-Total Average: 65.574500 msec
-Total Max:     68.799000 msec
-Total Min:     63.167000 msec
+Total Average: 57.481900 msec
+Total Max:     76.283000 msec
+Total Min:     50.847000 msec
 
   AVERAGE       MAX       MIN
 ------------------------------
-34.550900 36.747000 32.073000: C:\Users\shaig\AppData\Local\nvim\init.lua
-14.660100 16.207000 14.190000: locale set
- 4.650900  5.221000  4.144000: require('vim._defaults')
- 4.162300  4.918000  3.732000: C:\Users\shaig\AppData\Local\nvim-data\lazy\gruvbox-baby\colors\gruvbox-baby.vim
- 3.313700  3.994000  2.859000: reading ShaDa
- 1.836700  2.040000  1.701000: require('vim._init_packages')
- 1.801300  2.460000  1.339000: require('gruvbox-baby')
- 1.780600  2.345000  1.336000: C:\Program Files\Neovim\share/nvim/runtime/plugin/matchit.vim
- 1.618400  2.314000  1.392000: require('lazy.view.commands')
- 1.479600  1.868000  1.345000: sourcing vimrc file(s)
- 1.437900  2.141000  1.240000: require('lazy.manage')
- 1.227700  1.938000  1.014000: require('lazy.manage.runner')
- 1.208400  1.306000  1.100000: C:\Program Files\Neovim\share/nvim/runtime/syntax/syntax.vim
- 1.199700  1.332000  1.117000: require('vim._editor')
- 1.125600  1.246000  0.961000: require('lazy.core.loader')
- 1.117900  1.237000  0.996000: require('lazy')
- 1.099400  1.584000  1.020000: require('vim.loader')
- 1.033900  1.144000  0.974000: init lua interpreter
- 1.016300  1.441000  0.859000: require('gruvbox-baby.util')
- 0.836800  1.531000  0.610000: require('lazy.manage.task')
- 0.787100  0.987000  0.720000: inits 1
- 0.671700  0.778000  0.580000: require('lazy.core.plugin')
- 0.533000  0.577000  0.468000: C:\Program Files\Neovim\share/nvim/runtime/plugin/netrwPlugin.vim
- 0.509900  0.558000  0.459000: inits 3
- 0.496100  0.548000  0.438000: C:\Program Files\Neovim\share/nvim/runtime/plugin/rplugin.vim
- 0.464400  0.651000  0.428000: require('vim.shared')
- 0.447800  0.528000  0.387000: require('lazy.core.meta')
- 0.435400  0.626000  0.376000: require('gruvbox-baby.theme')
- 0.427200  0.552000  0.377000: require('vim._options')
- 0.411100  0.574000  0.363000: init highlight
- 0.396900  0.437000  0.274000: require('lazy.core.config')
- 0.383100  0.551000  0.313000: C:\Program Files\Neovim\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim
- 0.359200  0.951000  0.219000: require('lazy.manage.process')
- 0.346300  0.570000  0.270000: require('gruvbox-baby.config')
- 0.326300  0.518000  0.296000: require('vim.fs')
- 0.323800  0.483000  0.231000: require('lazy.core.util')
- 0.320400  0.383000  0.296000: require('vim.uri')
- 0.317400  0.606000  0.153000: require('lazy.core.handler.ft')
- 0.317100  0.432000  0.277000: C:\Program Files\Neovim\share/nvim/runtime/plugin/gzip.vim
- 0.309300  0.553000  0.242000: require('gruvbox-baby.hsluv')
- 0.294100  0.367000  0.256000: C:\Program Files\Neovim\share\nvim\runtime\filetype.lua
- 0.286900  0.316000  0.233000: require('keymaps')
- 0.267700  0.320000  0.225000: C:\Program Files\Neovim\share/nvim/runtime/plugin/matchparen.vim
- 0.266200  0.333000  0.208000: require('gruvbox-baby.colors')
- 0.249600  0.476000  0.172000: require('lazy.core.handler.cmd')
- 0.240000  0.270000  0.226000: require('vim.inspect')
- 0.233700  0.265000  0.204000: require('lazy.stats')
- 0.230800  0.311000  0.182000: require('lazy.terminal')
- 0.221200  0.244000  0.182000: require('lazy.core.handler')
- 0.221200  0.266000  0.186000: C:\Program Files\Neovim\share/nvim/runtime/plugin/zipPlugin.vim
- 0.221200  0.364000  0.162000: require('lazy.core.fragments')
- 0.214900  0.316000  0.155000: C:\Program Files\Neovim\share/nvim/runtime/plugin/editorconfig.lua
- 0.214900  0.267000  0.174000: require('lazy.core.handler.event')
- 0.208400  0.257000  0.172000: require('lazy.pkg')
- 0.204200  0.410000  0.146000: require('lazy.core.handler.keys')
- 0.204000  0.350000  0.143000: require('lazy.async')
- 0.202700  0.254000  0.173000: early init
- 0.197200  0.287000  0.151000: opening buffers
- 0.190400  0.301000  0.145000: C:\Program Files\Neovim\share/nvim/runtime/plugin/man.lua
- 0.173800  0.295000  0.120000: C:\Program Files\Neovim\share/nvim/runtime/filetype.lua
- 0.169500  0.226000  0.128000: C:\Program Files\Neovim\share/nvim/runtime/plugin/osc52.lua
- 0.150500  0.176000  0.121000: C:\Program Files\Neovim\share/nvim/runtime/plugin/tohtml.lua
- 0.139500  0.159000  0.119000: C:\Program Files\Neovim\share/nvim/runtime/plugin/tarPlugin.vim
- 0.125300  0.167000  0.108000: C:\Program Files\Neovim\share\nvim\runtime\syntax\synload.vim
- 0.123900  0.164000  0.104000: expanding arguments
- 0.105300  0.137000  0.083000: C:\Program Files\Neovim\share/nvim/runtime/plugin/shada.vim
- 0.093100  0.115000  0.081000: event init
- 0.087800  0.204000  0.025000: C:\Program Files\Neovim\share\nvim\runtime\ftplugin.vim
- 0.076200  0.084000  0.071000: init first window
- 0.056400  0.070000  0.050000: require('vim.keymap')
- 0.054700  0.072000  0.043000: BufEnter autocommands
- 0.052500  0.089000  0.041000: C:/Users/shaig/AppData/Local/nvim-data/lazy/typst.vim/ftdetect/typst.vim
- 0.050000  0.070000  0.039000: C:\Program Files\Neovim\share/nvim/runtime/plugin/tutor.vim
- 0.047900  0.082000  0.036000: C:\Program Files\Neovim\share/nvim/runtime/plugin/spellfile.vim
- 0.042700  0.060000  0.036000: clear screen
- 0.042150  0.108000  0.019000: C:\Program Files\Neovim\share\nvim\runtime\indent.vim
- 0.031700  0.043000  0.025000: require('ffi')
- 0.031400  0.043000  0.026000: inits 2
- 0.030600  0.039000  0.027000: window checked
- 0.019300  0.040000  0.009000: --- NVIM STARTING ---
- 0.016300  0.020000  0.013000: init default mappings & autocommands
- 0.011600  0.013000  0.010000: --- NVIM STARTED ---
- 0.010600  0.013000  0.008000: editing files in windows
- 0.008600  0.009000  0.008000: parsing arguments
+29.752200 41.117000 25.925000: C:\Users\shaig\AppData\Local\nvim\init.lua
+14.312500 21.773000 11.749000: locale set
+ 3.695600  4.454000  3.429000: require('vim._defaults')
+ 3.495700  5.544000  2.981000: C:\Users\shaig\AppData\Local\nvim-data\lazy\gruvbox-baby\colors\gruvbox-baby.vim
+ 2.823000  2.926000  2.696000: reading ShaDa
+ 1.547900  2.891000  1.218000: require('gruvbox-baby')
+ 1.506900  2.140000  1.224000: require('lazy.view.commands')
+ 1.497400  1.759000  1.424000: require('vim._init_packages')
+ 1.326800  1.932000  1.059000: require('lazy.manage')
+ 1.277600  1.690000  1.086000: C:\Program Files\Neovim\share/nvim/runtime/plugin/matchit.vim
+ 1.235300  1.408000  1.152000: sourcing vimrc file(s)
+ 1.124000  1.738000  0.899000: require('lazy.manage.runner')
+ 1.031600  1.720000  0.868000: require('lazy')
+ 1.010200  1.405000  0.871000: require('lazy.core.loader')
+ 0.990900  1.252000  0.921000: require('vim._editor')
+ 0.963200  1.046000  0.899000: C:\Program Files\Neovim\share/nvim/runtime/syntax/syntax.vim
+ 0.918600  1.234000  0.828000: require('vim.loader')
+ 0.809300  1.348000  0.635000: require('gruvbox-baby.util')
+ 0.808000  0.913000  0.743000: init lua interpreter
+ 0.739300  1.312000  0.522000: require('lazy.manage.task')
+ 0.713200  0.767000  0.664000: inits 1
+ 0.603800  0.847000  0.488000: require('lazy.core.plugin')
+ 0.437800  0.660000  0.371000: C:\Program Files\Neovim\share/nvim/runtime/plugin/netrwPlugin.vim
+ 0.415700  0.457000  0.394000: inits 3
+ 0.405900  0.631000  0.338000: require('lazy.core.meta')
+ 0.398300  0.450000  0.363000: C:\Program Files\Neovim\share/nvim/runtime/plugin/rplugin.vim
+ 0.371000  0.405000  0.356000: require('vim.shared')
+ 0.345400  0.482000  0.247000: require('lazy.core.util')
+ 0.338500  0.586000  0.280000: require('gruvbox-baby.theme')
+ 0.338200  0.483000  0.226000: require('lazy.core.config')
+ 0.336700  0.389000  0.319000: require('vim._options')
+ 0.329000  0.469000  0.302000: init highlight
+ 0.296800  0.533000  0.240000: require('vim.uri')
+ 0.296500  0.569000  0.162000: require('lazy.manage.process')
+ 0.295200  0.414000  0.247000: C:\Program Files\Neovim\share\nvim\runtime\pack\dist\opt\matchit\plugin\matchit.vim
+ 0.286000  0.449000  0.217000: require('gruvbox-baby.config')
+ 0.265600  0.456000  0.227000: C:\Program Files\Neovim\share\nvim\runtime\filetype.lua
+ 0.264600  0.695000  0.116000: require('lazy.core.handler.ft')
+ 0.257400  0.280000  0.247000: require('vim.fs')
+ 0.242900  0.362000  0.138000: require('gruvbox-baby.hsluv')
+ 0.240900  0.316000  0.208000: C:\Program Files\Neovim\share/nvim/runtime/plugin/gzip.vim
+ 0.230500  0.508000  0.138000: require('lazy.terminal')
+ 0.223800  0.344000  0.182000: require('keymaps')
+ 0.216700  0.294000  0.151000: require('gruvbox-baby.colors')
+ 0.200100  0.238000  0.184000: require('vim.inspect')
+ 0.199700  0.367000  0.121000: require('lazy.core.handler.event')
+ 0.199000  0.235000  0.179000: require('lazy.stats')
+ 0.196200  0.370000  0.143000: require('lazy.async')
+ 0.191900  0.406000  0.127000: require('lazy.core.handler.keys')
+ 0.190900  0.232000  0.172000: C:\Program Files\Neovim\share/nvim/runtime/plugin/matchparen.vim
+ 0.190600  0.431000  0.127000: require('lazy.core.handler.cmd')
+ 0.190100  0.242000  0.147000: require('lazy.core.handler')
+ 0.187900  0.240000  0.151000: require('lazy.core.fragments')
+ 0.179400  0.267000  0.136000: require('lazy.pkg')
+ 0.175000  0.342000  0.112000: early init
+ 0.173100  0.201000  0.149000: C:\Program Files\Neovim\share/nvim/runtime/plugin/zipPlugin.vim
+ 0.164400  0.237000  0.127000: opening buffers
+ 0.151300  0.181000  0.119000: C:\Program Files\Neovim\share/nvim/runtime/plugin/man.lua
+ 0.147400  0.198000  0.116000: C:\Program Files\Neovim\share/nvim/runtime/plugin/editorconfig.lua
+ 0.145500  0.298000  0.106000: C:\Program Files\Neovim\share/nvim/runtime/filetype.lua
+ 0.137200  0.189000  0.106000: C:\Program Files\Neovim\share/nvim/runtime/plugin/osc52.lua
+ 0.135200  0.188000  0.107000: C:\Program Files\Neovim\share/nvim/runtime/plugin/tohtml.lua
+ 0.115400  0.138000  0.101000: C:\Program Files\Neovim\share/nvim/runtime/plugin/tarPlugin.vim
+ 0.093500  0.154000  0.064000: event init
+ 0.092800  0.106000  0.085000: C:\Program Files\Neovim\share\nvim\runtime\syntax\synload.vim
+ 0.086800  0.095000  0.079000: expanding arguments
+ 0.081500  0.098000  0.072000: C:\Program Files\Neovim\share/nvim/runtime/plugin/shada.vim
+ 0.074300  0.093000  0.061000: init first window
+ 0.074250  0.154000  0.022000: C:\Program Files\Neovim\share\nvim\runtime\ftplugin.vim
+ 0.044000  0.050000  0.040000: require('vim.keymap')
+ 0.040800  0.046000  0.038000: BufEnter autocommands
+ 0.040400  0.056000  0.031000: C:\Program Files\Neovim\share/nvim/runtime/plugin/spellfile.vim
+ 0.039200  0.051000  0.033000: C:\Program Files\Neovim\share/nvim/runtime/plugin/tutor.vim
+ 0.037300  0.068000  0.016000: C:\Program Files\Neovim\share\nvim\runtime\indent.vim
+ 0.028100  0.032000  0.026000: clear screen
+ 0.027300  0.053000  0.019000: require('ffi')
+ 0.027200  0.036000  0.022000: window checked
+ 0.023300  0.028000  0.022000: inits 2
+ 0.012500  0.017000  0.010000: init default mappings & autocommands
+ 0.009800  0.019000  0.006000: --- NVIM STARTING ---
+ 0.008700  0.022000  0.006000: parsing arguments
+ 0.008500  0.009000  0.007000: --- NVIM STARTED ---
+ 0.007700  0.009000  0.006000: editing files in windows
