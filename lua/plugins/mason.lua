@@ -95,8 +95,8 @@ return {
 	-- Nvim-cmp plugins
 	{
 		"hrsh7th/nvim-cmp",
-		--event = "BufReadPre",
-		event = { "InsertEnter", "CmdlineEnter" }, -- Lazy load on Insert or Command-line mode
+		event = "BufReadPre",
+		--event = { "InsertEnter", "CmdlineEnter" }, -- Lazy load on Insert or Command-line mode
 		config = function()
 			local cmp = require("cmp")
 
