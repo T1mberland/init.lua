@@ -3,7 +3,6 @@ return {
 	{
 		"hrsh7th/nvim-cmp",
 		event = { "BufReadPre", "BufNewFile" },
-		--event = { "InsertEnter", "CmdlineEnter" }, -- Lazy load on Insert or Command-line mode
 		config = function()
 			local cmp = require("cmp")
 
@@ -32,7 +31,7 @@ return {
 				}),
 				sources = cmp.config.sources({
 					{ name = "nvim_lsp" },
-					-- { name = 'vsnip' }, -- For vsnip users.
+					{ name = "vsnip" }, -- For vsnip users.
 					-- { name = 'luasnip' }, -- For luasnip users.
 					-- { name = 'ultisnips' }, -- For ultisnips users.
 					-- { name = 'snippy' }, -- For snippy users.
