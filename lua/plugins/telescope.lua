@@ -3,7 +3,14 @@ return {
 		"nvim-telescope/telescope.nvim",
 		tag = "0.1.8",
 		dependencies = { "nvim-lua/plenary.nvim" },
-		event = "VeryLazy",
+		--event = "VeryLazy",
+		keys = {
+			{ "<leader>ff" },
+			{ "<leader>fg" },
+			{ "<leader>fd" },
+			{ "<leader>fb" },
+			{ "<leader>fh" },
+		},
 		lazy = true,
 		config = function()
 			local builtin = require("telescope.builtin")
