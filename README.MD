@@ -22,10 +22,6 @@ Place these files under `~/.config/nvim`
 
 | Keymap        | Description                      | Plugin    |
 |---------------|----------------------------------|-----------|
-| `<leader>a`   | Add file to Harpoon list         | Harpoon   |
-| `<C-e>`       | Toggle Harpoon quick menu        | Harpoon   |
-| `<C-o>`       | Previous buffer in Harpoon list  | Harpoon   |
-| `<C-i>`       | Next buffer in Harpoon list      | Harpoon   |
 | `<leader>rn`  | Rename symbol                    | LSP       |
 | `<leader>ca`  | Code actions                     | LSP       |
 | `<leader>k`   | Open diagnostics at the cursor   | LSP       |
@@ -39,6 +35,10 @@ Place these files under `~/.config/nvim`
 | `<leader>fh`  | Help tags                        | Telescope |
 | `<leader>uu`  | Toggle floating file explorer    | NeoTree   |
 | `<leader>ui`  | Toggle file explorer on the left | NeoTree   |
+| `e`           | Long jump                        | Flash     |
+| `E`           | Syntax aware visual selection    | Flash     |
+| `Ctrl+H`      | Go to the previous tab           | Flash     |
+| `Ctrl+L`      | Go to the next tab               | Flash     |
 
 ## DEFAULT FORMATTERS (ENSURE INSTALLED)
 - hlint
@@ -50,3 +50,11 @@ Place these files under `~/.config/nvim`
 - typstfmt
 
 
+### disalbed plugins keymaps
+
+| Keymap        | Description                      | Plugin    |
+|---------------|----------------------------------|-----------|
+| `<leader>a`   | Add file to Harpoon list         | Harpoon   |
+| `<C-e>`       | Toggle Harpoon quick menu        | Harpoon   |
+| `<C-o>`       | Previous buffer in Harpoon list  | Harpoon   |
+| `<C-i>`       | Next buffer in Harpoon list      | Harpoon   |
