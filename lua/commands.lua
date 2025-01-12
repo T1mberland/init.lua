@@ -39,3 +39,6 @@ end
 
 -- Create a flexible command named "Tb" that accepts an argument
 vim.api.nvim_create_user_command("T", insert_text_block, { nargs = 1 })
+vim.api.nvim_create_user_command("Config", function()
+	vim.cmd([[e $MYVIMRC]])
+end, { nargs = 0 })
