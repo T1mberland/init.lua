@@ -2,7 +2,7 @@ return {
 	"mrcjkb/haskell-tools.nvim",
 	version = "^4", -- Recommended
 	lazy = false, -- This plugin is already lazy
-	enabled = false,
+	--enabled = false,
 	config = function()
 		-- ~/.config/nvim/after/ftplugin/haskell.lua
 		local ht = require("haskell-tools")

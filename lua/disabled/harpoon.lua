@@ -3,7 +3,7 @@ return {
 	branch = "harpoon2",
 	--event = { "InsertEnter" },
 	dependencies = { "nvim-lua/plenary.nvim" },
-	enabled = false,
+	--enabled = false,
 	config = function()
 		local harpoon = require("harpoon")
 

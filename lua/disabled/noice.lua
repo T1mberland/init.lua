@@ -1,7 +1,7 @@
 return {
 	"folke/noice.nvim",
 	event = "VeryLazy",
-	enabled = false,
+	--enabled = false,
 	opts = {
 		notify = {
 			-- Noice can be used as `vim.notify` so you can route any notification like other messages
