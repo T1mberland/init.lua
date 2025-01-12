@@ -23,7 +23,7 @@ vim.api.nvim_set_keymap("n", "<C-j>", "<C-d>", opts)
 vim.api.nvim_set_keymap("n", "<C-k>", "<C-u>", opts)
 --vim.api.nvim_set_keymap('n', '<Leader>s', ':%s/\\<<C-r><C-w>\\>/\\<<C-r><C-w>\\>/gI<Left><Left><Left>', opts)
 vim.api.nvim_set_keymap("n", "<C-d>", '"_dd', opts)
-vim.api.nvim_set_keymap("n", "<C-x>", '"_x', opts)
+vim.api.nvim_set_keymap("n", "x", '"_x', opts)
 vim.api.nvim_set_keymap("n", "K", "<nop>", opts)
 
 vim.api.nvim_set_keymap("n", "<C-S-a>", ":lua vim.lsp.buf.hover()", opts)
@@ -44,3 +44,8 @@ vim.api.nvim_set_keymap("v", "<C-o>", ":m '<-2<CR>gv=gv", opts)
 vim.api.nvim_set_keymap("v", "<C-i>", ":m '>+1<CR>gv=gv", opts)
 vim.api.nvim_set_keymap("v", "J", "<nop>", opts)
 vim.api.nvim_set_keymap("v", "K", "<nop>", opts)
+
+-- Buffer tabs
+vim.api.nvim_set_keymap("n", "<C-l>", ":bnext<CR>", { silent = true })
+vim.api.nvim_set_keymap("n", "<C-h>", ":bprev<CR>", { silent = true })
+vim.api.nvim_set_keymap("n", "<C-x>", ":bd<CR>", { silent = true })
