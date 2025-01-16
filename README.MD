@@ -38,7 +38,8 @@ Place these files under `~/.config/nvim`
 | `e`           | Long jump                        | Flash     |
 | `E`           | Syntax aware visual selection    | Flash     |
 | `Ctrl+H`      | Go to the previous tab           | Flash     |
-| `Ctrl+L`      | Go to the next tab               | Flash     |
+| `Ctrl+H`      | Go to the previous tab           | Flash     |
+| `Ctrl+X`      | Close the current tab            | Flash     |
 
 ## DEFAULT FORMATTERS (ENSURE INSTALLED)
 - hlint
