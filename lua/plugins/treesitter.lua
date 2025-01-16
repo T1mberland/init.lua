@@ -13,7 +13,7 @@ return {
 				"markdown",
 				"lua",
 				"haskell",
-				"python",
+				--"python",
 			},
 			incremental_selection = { enable = false },
 		},
