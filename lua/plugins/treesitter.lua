@@ -8,8 +8,14 @@ return {
 		},
 		main = "nvim-treesitter.configs",
 		opts = {
-			highlight = { enable = true },
-			ensure_installed = { "markdown", "lua", "haskell", "python" },
+			--highlight = { enable = false },
+			ensure_installed = {
+				"markdown",
+				"lua",
+				"haskell",
+				"python",
+			},
+			incremental_selection = { enable = false },
 		},
 		event = { "BufReadPre", "BufNewFile" },
 	},
