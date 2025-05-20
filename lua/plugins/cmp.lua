@@ -136,6 +136,20 @@ require("cmp_git").setup() ]]
 			require("lspconfig")["pylsp"].setup({
 				capabilities = capabilities,
 				on_attach = on_attach,
+				settings = {
+					pylsp = {
+						plugins = {
+							ruff = {
+								enabled = true,
+								organizeImports = false,
+							},
+							autopep8 = { enabled = false },
+							yapf = { enabled = false },
+							isort = { enabled = false },
+							pyflakes = { enabled = false },
+						},
+					},
+				},
 			})
 		end,
 	},
