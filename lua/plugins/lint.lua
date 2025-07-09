@@ -5,7 +5,7 @@ return {
 	config = function()
 		require("lint").linters_by_ft = {
 			markdown = { "markdownlint" },
-			python = { "ruff" },
+			--python = { "ruff" }, -- ruff is handled by pylsp
 			haskell = { "hlint" },
 		}
 
