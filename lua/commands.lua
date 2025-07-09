@@ -37,8 +37,26 @@ local function insert_text_block(args)
 	vim.api.nvim_win_set_cursor(0, { line_num + 1, 0 })
 end
 
+local function add_marimo_cell()
+	local current_line = vim.api.nvim_get_current_line()
+	local indent = string.match(current_line, "^%s*") -- Matches leading whitespace
+	-- The function inserts the LaTeX align* block
+	local lines = {
+		"@app.cell",
+		"def _():",
+		indent .. "    " .. "pass",
+	}
+	-- Get the current line number
+	local line_num = vim.api.nvim_win_get_cursor(0)[1]
+	-- Insert the lines at the current line number
+	vim.api.nvim_buf_set_lines(0, line_num, line_num, false, lines)
+	-- Move the cursor to the empty line inside the align environment
+	vim.api.nvim_win_set_cursor(0, { line_num + 1, 0 })
+end
+
 -- Create a flexible command named "Tb" that accepts an argument
 vim.api.nvim_create_user_command("T", insert_text_block, { nargs = 1 })
 vim.api.nvim_create_user_command("Config", function()
 	vim.cmd([[e $MYVIMRC]])
 end, { nargs = 0 })
+vim.api.nvim_create_user_command("C", add_marimo_cell, { nargs = 0 })
