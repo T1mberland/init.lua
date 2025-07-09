@@ -11,7 +11,6 @@ return {
 			--highlight = { enable = false },
 			ensure_installed = {
 				"markdown",
-				"lua",
 				"haskell",
 				--"python",
 			},
