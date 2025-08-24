@@ -18,8 +18,8 @@ return {
 					end,
 				},
 				window = {
-					completion = cmp.config.window.bordered(),
-					documentation = cmp.config.window.bordered(),
+					--completion = cmp.config.window.bordered(),
+					--documentation = cmp.config.window.bordered(),
 				},
 				mapping = cmp.mapping.preset.insert({
 					--["<C-b>"] = cmp.mapping.scroll_docs(-4),
@@ -84,6 +84,7 @@ require("cmp_git").setup() ]]
 			})
 
 			-- Configure rounded borders for LSP floating windows
+			--[[
 			vim.diagnostic.config({
 				float = { border = "rounded" }, -- Rounded corners for diagnostics
 			})
@@ -95,6 +96,7 @@ require("cmp_git").setup() ]]
 			vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
 				border = "rounded", -- Rounded corners for signature help
 			})
+      ]]
 
 			-- <Leader>k to see the diagnostics(errors, warnings)
 			vim.keymap.set("n", "<Leader>k", function()

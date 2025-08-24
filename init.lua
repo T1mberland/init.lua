@@ -2,6 +2,8 @@
 vim.loader.enable()
 vim.opt.encoding = "utf-8"
 
+vim.o.keywordprg = ":help" -- Windows で外部 man を踏まない保険
+
 -- Use system clipboard
 vim.opt.clipboard = "unnamedplus"
 
