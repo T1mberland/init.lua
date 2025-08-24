@@ -27,7 +27,7 @@ return {
 					--['<C-Space>'] = cmp.mapping.complete(),
 					["<C-f>"] = cmp.mapping.abort(),
 					--['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-					["<Tab>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+					["<Tab>"] = cmp.mapping.confirm({ select = false }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 				}),
 				sources = cmp.config.sources({
 					{ name = "nvim_lsp" },
@@ -145,10 +145,10 @@ require("cmp_git").setup() ]]
 								enabled = true,
 								organizeImports = false,
 							},
-							autopep8 = { enabled = false },
-							yapf = { enabled = false },
-							isort = { enabled = false },
-							pyflakes = { enabled = false },
+							--autopep8 = { enabled = false },
+							--yapf = { enabled = false },
+							--isort = { enabled = false },
+							--pyflakes = { enabled = false },
 						},
 					},
 				},
