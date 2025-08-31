@@ -18,8 +18,8 @@ return {
 					end,
 				},
 				window = {
-					--completion = cmp.config.window.bordered(),
-					--documentation = cmp.config.window.bordered(),
+					completion = cmp.config.window.bordered(),
+					documentation = cmp.config.window.bordered(),
 				},
 				mapping = cmp.mapping.preset.insert({
 					--["<C-b>"] = cmp.mapping.scroll_docs(-4),
@@ -84,7 +84,6 @@ require("cmp_git").setup() ]]
 			})
 
 			-- Configure rounded borders for LSP floating windows
-			--[[
 			vim.diagnostic.config({
 				float = { border = "rounded" }, -- Rounded corners for diagnostics
 			})
@@ -96,7 +95,6 @@ require("cmp_git").setup() ]]
 			vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
 				border = "rounded", -- Rounded corners for signature help
 			})
-      ]]
 
 			-- <Leader>k to see the diagnostics(errors, warnings)
 			vim.keymap.set("n", "<Leader>k", function()
@@ -153,6 +151,49 @@ require("cmp_git").setup() ]]
 					},
 				},
 			})
+
+			-- --- Hoverに枠＆色を必ず付けるパッチ ---------------------------------------
+			do
+				-- ① open_floating_preview にデフォルト枠を強制
+				local ofp = vim.lsp.util.open_floating_preview
+				function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
+					opts = opts or {}
+					opts.border = opts.border or "rounded" -- ← 丸枠を必ず付ける
+					-- (任意) サイズ控えめに
+					opts.max_width = opts.max_width or math.floor(vim.o.columns * 0.45)
+					opts.max_height = opts.max_height or math.floor(vim.o.lines * 0.30)
+
+					local bufnr, winnr = ofp(contents, syntax, opts, ...)
+
+					-- 枠・背景のハイライトを確実に適用（テーマで見えない問題に対応）
+					pcall(
+						vim.api.nvim_set_option_value,
+						"winhighlight",
+						"NormalFloat:NormalFloat,FloatBorder:FloatBorder",
+						{ win = winnr }
+					)
+
+					return bufnr, winnr
+				end
+
+				-- ② 枠が見える色に調整（colorscheme 変更にも追随）
+				local function set_float_hl()
+					local nf = vim.api.nvim_get_hl(0, { name = "NormalFloat", link = false })
+					local cm = vim.api.nvim_get_hl(0, { name = "Comment", link = false })
+					local nor = vim.api.nvim_get_hl(0, { name = "Normal", link = false })
+					local fg = (cm and cm.fg) or (nor and nor.fg) or "#a0a0a0"
+					vim.api.nvim_set_hl(0, "NormalFloat", { bg = (nf and nf.bg) or "NONE" })
+					vim.api.nvim_set_hl(0, "FloatBorder", { fg = fg, bg = (nf and nf.bg) or "NONE" })
+				end
+				set_float_hl()
+				vim.api.nvim_create_autocmd("ColorScheme", { callback = set_float_hl })
+
+				-- ③ 念のためハンドラ側でも丸枠要求（ダブルで保険）
+				vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" })
+				vim.lsp.handlers["textDocument/signatureHelp"] =
+					vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" })
+			end
+			-- ---------------------------------------------------------------------------
 		end,
 	},
 	{ "hrsh7th/cmp-nvim-lsp", event = "InsertEnter" },

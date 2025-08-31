@@ -10,9 +10,15 @@ return {
 		opts = {
 			--highlight = { enable = false },
 			ensure_installed = {
-				"markdown",
+				-- "markdown",
 				"haskell",
-				--"python",
+				"python",
+			},
+			highlight = {
+				enable = true, -- 全体はオン
+				disable = { "markdown", "markdown_inline" }, -- ←ここで markdown だけオフ
+				-- optional: TSを切ったmarkdownに従来のregexハイライトを併用したい時
+				additional_vim_regex_highlighting = { "markdown" },
 			},
 			incremental_selection = { enable = false },
 		},
