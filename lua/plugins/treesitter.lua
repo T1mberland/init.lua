@@ -13,6 +13,7 @@ return {
 				-- "markdown",
 				"haskell",
 				"python",
+				"lua",
 			},
 			highlight = {
 				enable = true, -- 全体はオン
@@ -23,6 +24,15 @@ return {
 			incremental_selection = { enable = false },
 		},
 		event = { "BufReadPre", "BufNewFile" },
+		config = function()
+			-- Treesitterで構文解析ベースの折りたたみを有効化
+			vim.o.foldmethod = "expr"
+			vim.o.foldexpr = "nvim_treesitter#foldexpr()"
+
+			-- デフォルトで全部展開しておく（必要に応じて）
+			vim.o.foldenable = false
+			vim.o.foldlevel = 99
+		end,
 	},
 	{
 		"nvim-treesitter/nvim-treesitter-textobjects",
