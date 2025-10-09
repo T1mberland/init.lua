@@ -41,15 +41,6 @@ Place these files under `~/.config/nvim`
 | `Ctrl+H`      | Go to the previous tab           | Flash     |
 | `Ctrl+X`      | Close the current tab            | Flash     |
 
-## DEFAULT FORMATTERS (ENSURE INSTALLED)
-- hlint
-- markdownlint
-- ormolu
-- prettier
-- prettierd
-- stylua
-- typstfmt
-
 
 ### disalbed plugins keymaps
 
