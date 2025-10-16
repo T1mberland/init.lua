@@ -61,6 +61,29 @@ return {
       },
     },
   },
+
+  {
+    "saghen/blink.cmp",
+    opts = {
+      completion = {
+        -- Tab で一発確定したいなら、候補を自動選択しておくと快適
+        -- list = { selection = { preselect = true } },
+        -- accept = { auto_brackets = { enabled = true } },
+      },
+
+      keymap = {
+        preset = "none",
+        ["<CR>"] = { "fallback" },
+
+        -- Tab で確定（選択されている候補を受け入れる）
+        -- 候補が出ていない/選択されていないときはフォールバック
+        ["<Tab>"] = { "select_and_accept", "fallback" },
+
+        -- Shift-Tab で候補を一つ上へ（メニューがないときはフォールバック）
+        ["<S-Tab>"] = { "select_prev", "fallback" },
+      },
+    },
+  },
 }
 -- since this is just an example spec, don't actually load anything here and return an empty spec
 -- stylua: ignore
