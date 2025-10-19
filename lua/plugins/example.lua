@@ -9,7 +9,6 @@ return {
       colorscheme = "gruvbox",
     },
   },
-
   {
     "folke/flash.nvim",
     keys = {
