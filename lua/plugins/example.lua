@@ -83,6 +83,18 @@ return {
       },
     },
   },
+
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        lua = { "stylua" },
+        fish = { "fish_indent" },
+        sh = { "shfmt" },
+        json = { "prettierd" },
+      },
+    },
+  },
 }
 -- since this is just an example spec, don't actually load anything here and return an empty spec
 -- stylua: ignore
