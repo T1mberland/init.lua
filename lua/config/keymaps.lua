@@ -8,3 +8,7 @@ vim.api.nvim_set_keymap("n", "<C-k>", "<C-u>", opts)
 vim.api.nvim_set_keymap("v", "<C-j>", "<C-d>", opts)
 vim.api.nvim_set_keymap("v", "<C-k>", "<C-u>", opts)
 vim.api.nvim_set_keymap("i", "jk", "<ESC>", opts)
+
+vim.keymap.set("n", "<leader>k", function()
+  vim.diagnostic.open_float(nil, { scope = "line", border = "rounded", source = true })
+end, { desc = "Line diagnostics (float)" })
