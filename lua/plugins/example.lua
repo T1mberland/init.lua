@@ -64,22 +64,23 @@ return {
   {
     "saghen/blink.cmp",
     opts = {
-      completion = {
-        -- Tab で一発確定したいなら、候補を自動選択しておくと快適
-        -- list = { selection = { preselect = true } },
-        -- accept = { auto_brackets = { enabled = true } },
-      },
-
       keymap = {
         preset = "none",
         ["<CR>"] = { "fallback" },
-
+        ["<C-n>"] = { "show", "select_next", "fallback" },
+        ["<C-p>"] = { "show", "select_prev", "fallback" },
         -- Tab で確定（選択されている候補を受け入れる）
         -- 候補が出ていない/選択されていないときはフォールバック
         ["<Tab>"] = { "select_and_accept", "fallback" },
 
         -- Shift-Tab で候補を一つ上へ（メニューがないときはフォールバック）
         ["<S-Tab>"] = { "select_prev", "fallback" },
+      },
+      completion = {
+        documentation = {
+          auto_show = true, -- 候補に乗ったら自動で説明を表示
+          auto_show_delay_ms = 120, -- 好みで
+        },
       },
     },
   },
