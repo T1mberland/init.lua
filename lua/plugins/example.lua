@@ -13,9 +13,9 @@ return {
     "folke/flash.nvim",
     keys = {
       -- disable the default flash keymaps
-      { "r", mode = { "n", "x", "o" }, false },
-      { "s", mode = { "n", "x", "o" }, false },
-      { "S", mode = { "n", "x", "o" }, false },
+      { "r",     mode = { "n", "x", "o" }, false },
+      { "s",     mode = { "n", "x", "o" }, false },
+      { "S",     mode = { "n", "x", "o" }, false },
       { "<C-s>", mode = { "n", "x", "o" }, false },
 
       {
@@ -78,7 +78,7 @@ return {
       },
       completion = {
         documentation = {
-          auto_show = true, -- 候補に乗ったら自動で説明を表示
+          auto_show = true,         -- 候補に乗ったら自動で説明を表示
           auto_show_delay_ms = 120, -- 好みで
         },
       },
@@ -257,7 +257,7 @@ return {
     "nvim-lualine/lualine.nvim",
     event = "VeryLazy",
     opts = function(_, opts)
-    
+
       table.insert(opts.sections.lualine_x, {
         function()
           return "😄"
