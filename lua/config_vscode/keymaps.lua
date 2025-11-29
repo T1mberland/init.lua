@@ -5,5 +5,7 @@ vim.api.nvim_set_keymap("v", "<C-j>", "<C-d>", opts)
 vim.api.nvim_set_keymap("v", "<C-k>", "<C-u>", opts)
 vim.api.nvim_set_keymap("i", "jk", "<ESC>", opts)
 
+vim.opt.clipboard = "unnamedplus"
+
 vim.cmd([[set iminsert=0]])
 vim.cmd([[set imsearch=0]])
